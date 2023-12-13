@@ -86,9 +86,9 @@ class Controler(object):
                 elif self.R.exists("img/next_page.png",5):
                     self.wait_and_click("img/next_page.png",3) 
                 # 季後賽結束會出現下一頁或沒有東西
-                # 每15場重啟一次模擬器
-                if self.count == 3:
-                    self.restart()
+                # # 每15場重啟一次模擬器
+                # if self.count == 15:
+                #     self.restart()
                 # 跳過技能升級
                 if self.R.exists("img/upgrade.png"):
                     self.R.click("img/cancel1.png")
